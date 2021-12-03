@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  color: white;
+  font-size: 4vmin;
+  padding: 0 3vmin;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  line-height: 7.5vmin;
+}
+
+nav {
+  height: 10vmin;
+  background-color: rgb(37, 37, 37);
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  width: 100vw;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 2vmin;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 7.5vmin;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vmin;
+  font-weight: bold;
+  margin: 0 3vmin;
+}
+
+nav ul li a:hover,
+a.active {
+  background-color: grey;
+  padding: 0.8vmin 1.5vmin;
+  border-radius: 0.3vmin;
+  color: white;
+}
+
+.checkbtn {
+  color: white;
+  font-size: 4vmin;
+  float: right;
+  margin-right: 5vmin;
+  display: none;
+  line-height: 7vmin;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.photo {
+  float: right;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+
+}
+
+.photo img {
+  border-radius: 50%;
+  width: 85vmin;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(4, 14, 59);
+  color: white;
+  padding-top: 10vmin;
+}
+
+.intro {
+  padding-top: 5vmin;
+}
+
+.intro h1 {
+  font-size: 10vmin;
+  margin-left: 10vmin;
+}
+
+.intro p {
+  margin: 2vmin 0vmin 2vmin 10vmin;
+  font-size: 3vmin;
+  /* margin-top: 2vmin; */
+}
+
+.intro a {
+  display: block;
+  width: 18vmin;
+  text-align: center;
+  margin-left: 10vmin;
+  background-color: rgba(160, 158, 158, 0.712);
+  padding: 1.5vmin;
+  font-size: 2vmin;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.education {
+  padding: 10vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.644);
+  text-align: center;
+}
+
+.eheadingdiv, .pheadingdiv, .sheadingdiv {
+  text-align: center;
+    color: white;
+    width: 75vmin;
+    height: 22vmin;
+    margin: 5vmin auto;
+    border-radius: 50%;
+    background-color: rgb(4, 14, 59);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.educationHeading, .projectHeading, .skillsHeading {
+    padding-top: 5vmin;
+    font-size: 10vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.edetailsdiv {
+    justify-content: center;
+}
+
+.edetails {
+    margin-right: 5vmin;
+    width: 45vmin;
+    height: 48vmin;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    color: white;
+    border-radius: 3vmin;
+    padding: 3vmin;
+    box-shadow: rgba(115, 115, 129, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.5s;
+    font-family: 'Noto Serif', serif;
+}
+
+.edetails:hover {
+  width: 50vmin;
+  height: 53vmin;
+}
+
+.edetails h2 {
+  font-size: 4vmin;
+}
+
+.eins, .egrade, .completion {
+  font-size: 3vmin;
+}
+
+.skills {
+  padding: 10vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.644);
+}
+
+.stext {
+  text-align: center;
+  margin: 4vmin 0;
+  color: rgb(4, 14, 59);
+  font-weight: bold;
+  font-size: 2.5vmin;
+}
+
+.skillitem {
+  padding: 0.5vmin 0;
+  margin: 0.3vmin 0;
+}
+
+.skillitem .skilltext {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 3vmin;
+  position: relative;
+}
+
+.skillitem .skilltext span:last-child {
+  position: absolute;
+}
+
+.skillitem .skilltext .w-90 {
+  margin-left: 85%;
+}
+.skillitem .skilltext .w-70 {
+  margin-left: 65%;
+}
+.skillitem .skilltext .w-80 {
+  margin-left: 75%;
+}
+
+.progress {
+  margin: 1.5vmin 0;
+  background-color: rgb(223, 221, 221);
+  border-radius: 2vmin;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: rgb(67, 89, 131);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.progress-bar.w-90 {
+  width: 90%;
+}
+.progress-bar.w-70 {
+  width: 70%;
+}
+.progress-bar.w-80 {
+  width: 80%;
+}
+
+.projects {
+  padding: 10vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.644);
+}
+
+.pdetails {
+  margin-right: 4vmin;
+  height: 68vmin;
+  width: 60vmin;
+  padding: 2vmin;
+  text-align: center;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  color: white;
+  border-radius: 3vmin;
+  transition: 0.5s;
+}
+
+
+.pdetails img {
+  width: 50vmin;
+  height: 35vmin;
+  margin: 2vmin 0;
+  transition: 1s;
+
+}
+
+.pdetails:hover {
+  transform: scale(1.08);
+
+}
+
+.pdiv {
+  margin-bottom: 4vmin;
+}
+
+.contact {
+  padding: 10vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.644);
+}
+
+.cheadingdiv {
+  text-align: center;
+}
+
+.contactHeading {
+    text-align: center;
+    /* transform: translate(50%,-50%); */
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 9vmin;
+    font-weight: 700;
+    color: #380036;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  margin-bottom: 5vmin;
+}
+
+.contactForm {
+  margin: auto;
+  width: 100vmin;
+  height: 100%;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  padding: 5vmin;
+  border-radius: 2vmin;
+  box-shadow: rgba(115, 115, 129, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.cinfo {
+  border-radius: 1vmin;
+  margin: 2vmin auto;
+  display: block;
+  width: 100%;
+  padding: 1vmin;
+}
+
+.contactbtn {
+  margin:2vmin auto;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  color: white;
+  padding: 2vmin;
+  border-radius: 1vmin;
+  font-family: serif;
+  font-size: 3vmin;
+  border: none;
+  box-shadow: rgba(115, 115, 129, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.clinks {
+  margin: 4vmin 0 0 0;
+  font-size: 7vmin;
+}
+
+.link {
+  background-color: #380036;
+  width: 12vmin;
+  height: 10.5vmin;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 2vmin;
+  color: white;
+}
+
+.link:hover {
+  color: white;
+  width: 14vmin;
+  height: 12vmin;
+  font-size: 8vmin;
+}
+
+
+@media (max-width: 1300px) {
+  .pdiv {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .pdetails {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+ @media (max-width: 1200px) {
+    .home {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .photo img {
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+
+      }
+      .photo {
+          justify-content: center;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .edetailsdiv {
+        flex-direction: column;
+
+      }
+      .edetails {
+        margin: 3vmin auto;
+      }
+      .pdetails {
+        margin: 3vmin auto;
+      }
+      
+      
+ }
+
+@media (max-width: 800px) {
+ 
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    background: none;
+    font-size: 3vmin;
+  }
+
+  nav ul li a:hover, a.active {
+    background: none;
+
+    color: rgb(184, 180, 180);
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .contactForm {
+    width: 60vmin;
+  }
+  .edetails {
+    height: 100%;
+  }
+}
