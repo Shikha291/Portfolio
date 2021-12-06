@@ -314,7 +314,7 @@ a.active {
   padding: 1vmin;
 }
 
-.contactbtn {
+#contactbtn {
   margin: 2vmin auto;
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
@@ -326,6 +326,17 @@ a.active {
   border: none;
   box-shadow: rgba(115, 115, 129, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  text-decoration: none;
+  width: 25vmin;
+  height: 8vmin;
+  text-align: center;
+}
+
+#contactbtn:hover {
+  color: #fff;
+  width: 26vmin;
+  height: 9vmin;
+  font-size: 3.1vmin;
 }
 
 .clinks {
@@ -354,7 +365,7 @@ a.active {
   .sdetailsdiv {
     flex-direction: column;
   }
-  .sitems{
+  .sitems {
     justify-content: center;
   }
   .sitem {
@@ -445,4 +456,3 @@ a.active {
     flex-direction: column;
   } */
 }
-

@@ -130,3 +130,17 @@ weather.addEventListener("mouseout", () => {
     clearInterval(weatherset);
 
 })
+
+// const contactform = document.getElementById("contactform");
+// const contactbtn = document.getElementById("contactbtn");
+// const subject = document.getElementById("subject");
+// const message = document.getElementById("message");
+// subject.addEventListener("change", (event) => {
+//     contactbtn.setAttribute('href', `mailto:shikha981492@gmail.com?subject = ${event.target.value}&body = ${message.value}`);
+//     console.log(contactbtn.href);
+// })
+
+// message.addEventListener("change", (event) => {
+//     contactbtn.setAttribute('href', `mailto:shikha981492@gmail.com?subject = ${subject.value}&body = ${event.target.value}`);
+//     console.log(contactbtn.href);
+// })
